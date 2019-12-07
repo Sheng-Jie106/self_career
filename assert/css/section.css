@@ -1,0 +1,67 @@
+div.space{
+width: 1px;
+height: 250px;
+}
+div.strip{
+width:210px;
+height: 100px;
+background-image:linear-gradient(to right bottom, #f44336, #ff9800, #f3db07, #8bc34a, #2196f3, #3f51b5,#b53f9c);
+opacity: 0.825;
+position: absolute;
+z-index: 5;
+top: 160px;
+right: -10px;
+border-radius: 100px 20px 20px 100px;
+box-shadow: 0 0 10px #d2d2d2;
+}
+div.strip:hover{
+opacity: 1;
+transition-duration: 0.5s;
+width: 265px;
+}
+div.top{
+clear: both;
+display: flex;
+align-items: center;
+padding: 20px 40px;
+}
+div.top div.hr{
+flex: none;
+width: 85%;
+background-image: linear-gradient(to right, rgb(237, 201, 17), rgba(33, 133, 218, 0.75));
+height: 2px;
+}
+div.top span{
+flex: none;
+padding: 10px;
+color: #ff5919;
+font-weight: bold;
+}
+div.top span:hover{color:red;}
+span.tit:hover{color:red;}
+div.top img{
+flex: none;
+width:50px;
+}
+div.con{display: flex;}
+div.part_a{
+flex:none;
+width: 183px;
+}
+div.part_a p{padding: 0 28px;}
+div.part_b{
+width: 570px;
+color: #2e1851;
+}
+div.part_b a span{color:blue;}
+div.part_b a span:hover{color:#00bcd4;}
+div.text p{
+text-indent: 40px;
+padding: 0 40px ;
+}
+div.flow:hover{
+background-image: linear-gradient(to right, rgb(233, 216, 255), rgb(214, 244, 255));
+border-radius:20px;
+box-shadow: 0 0 10px gray;
+transition-duration: 0.5s;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Wang-Sheng-Jie_career</title>
+		<script src=assert/js/progress.js></script>
+		<script src=assert/js/aside.js></script>
+		<style type="text/css" media="screen">
+		@import url(assert/css/article.css);
+		@import url(assert/css/section.css);
+			body{
+				margin:0;
+				background-color: #ececec;
+				font-family: 微軟正黑體;
+			}
+			main{
+				width:60%;
+				background-color:#aae1ff;
+				margin:140px auto;
+				padding: 60px ;
+				display: flex;
+				position: relative;
+				box-shadow: 0 0 16px grey;
+			}
+			article{
+				background-color:#f5fcffe0;
+				flex:none;
+				width:30%;
+				border: 5px inset white;
+    			border-right: none;
+			}
+			section{
+				background-color:#fcefffe3;
+				flex:none;
+				position: relative;
+				width:70%;
+				border: 5px inset white;
+    			border-left: none;
+			}
+			aside{
+				margin:0 auto;
+				position: relative;top:150px;
+				width: 500px;
+				opacity: 1;
+				transition: top 1.5s;
+				display: block;
+			}
+			div.mail{
+				width: 300px;
+    			margin: 0 auto;
+    			position: relative;top:-50px;
+    			transition: top 1.5s;
+			}
+			h3{
+				font-family: 標楷體;
+				color:gray;
+				text-align: center;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+			h4{
+				color:red;
+			}
+			p{line-height: 30px}
+			footer{
+				height: 80px;background-image: linear-gradient(to bottom, rgb(157, 232, 255), rgb(58, 201, 255));
+    			box-shadow: 0 0 10px grey;
+			}
+			footer p{
+				padding-top: 20px;
+				text-align: center;
+			}
+			footer span{
+				color:red;
+				font-family: 標楷體;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<aside id=aside>
+			<div class="mail" id=topmail>
+				<img id=mail style="opacity: 0;transition: opacity 1.5s;" src=assert/img/mail.png>
+			</div>
+			<h3 id=h3>您收到了來自中原大學心理三甲同學的履歷</h3>
+		</aside>
+		<div id=main style="display: none;opacity: 0;transition: opacity 1.5s">
+		<main>
+			<div style="position: absolute;top: -109px;left: 38%;transform: rotate(-7deg);z-index: 2;" ><img class=clip src=assert/img/clip.png></div>
+			<div class=strip>
+			</div>
+			<article>
+				<div class=portrait>
+					<img class="por" src=assert/img/pic.jpg><br>
+					<img style="margin: 16px 35px;" src=assert/img/name.png>
+				</div>
+				<div class=base>
+					<span class="tit">基本資料</span>
+					<hr>
+					<p>
+						姓名 : 王聖杰 ( Wang-Sheng-Jie )<br>
+						生日 : 1999/2/24<br>
+						學歷 : 中原大學 (在學)<br>
+					</p>
+					<hr><p>
+				</div>
+				<div class=connect>
+					<span class=tit>基本能力</span>
+					<hr>
+					<div class=bar>
+						<p><span class=titl>學&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;習</span> :
+						<progress id=2 value="0" max="100"></progress> 
+						<span id=22></span> %<br>
+						<span class=titl>創&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;意</span> : 
+						<progress id=3 value="0" max="100"></progress> 
+						<span id=33></span> %<br>
+						<span class=titl>獨立思考</span> :
+						<progress id=4 value="0" max="100"></progress> 
+						<span id=44></span> %<br>
+						<span class=titl>抗&nbsp;壓&nbsp;&nbsp;性</span> : <progress id=5 value="0" max="100"></progress> 
+						<span id=55></span> %</p>
+					</div>
+					<hr><p>
+				</div>
+				<div class=connect>
+					<span class=tit>專業技能</span>
+					<hr>
+					<div class=bar>
+						<p style="width:310px"><span class=titl>html &amp;
+						css &amp; JavaScript</span> : <br>
+						<progress id=1 value="0" max="100"></progress> 
+						<span id=11></span> %<br>
+						<span class=titl>桌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;球</span> : <br>108年大專院校北區男子團體第8名</br>中原大學106年新生盃第二名<br>中原大學積分賽800分以下第三名<br>
+						中華民國C級桌球裁判證照</br>
+						<span class=titl>打&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;字</span> :<br> 平均一分鐘60字<br>
+						<span class=titl>測驗編制</span> : <br>了解測驗編制基本原則、流程大綱</p>
+					</div>
+					<hr><p>
+				</div>
+				<div class=connect>
+					<span class=tit>通訊資料</span>
+					<hr>
+					<div>
+						<p><img style="width: 34px;position: relative;top:11px;" src=assert/svg/phone.svg>: 03-3123456<br>
+						<img style="width: 34px;position: relative;top:11px;" src=assert/svg/cellphone.svg>: 0912345678<br>
+						<img style="width: 34px;position: relative;top:11px;" src=assert/svg/email.svg>: fet091602@gmail.com<br>
+						<img style="width: 34px;position: relative;top:11px;" src=assert/svg/home.svg>: 桃園市中北路200號<br>
+						<a href=https://www.facebook.com/profile.php?id=100005201971738&ref=bookmarks target="_blank"><img src=assert/img/fb.png> : 王聖杰</a><br>
+						<a href=https://www.instagram.com/shengjie60 target="_blank"><img src=assert/img/ig.jpg> : shengjie60</a>
+						</p>
+					</div>
+					<hr><p>
+				</div>
+			</article>
+			<section>
+				<div class=space>
+				</div>
+				<div class=art>
+					<div class=top>
+						<img src=assert/svg/hat.svg>
+						<span>教育背景</span>
+						<div class=hr></div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2017 - 2021<br>
+								<span class=titl>心理學(主修)</span></p>
+							</div>
+							<div class=part_b>
+								<p>發展心理學、統計學、社會心理學、變態心理學、神經心理學、心理測驗學、心理測驗實作 : <a style="text-decoration: none" href=self-esteem.html target="_blank"><span>自尊量表</span></a>、心理實驗法、心理實驗實作</p>
+							</div>
+						</div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2019 - 2021<br>
+								<span class=titl>資訊管理(輔修)</span></p>
+							</div>
+							<div class=part_b>
+								<p>Java程式設計、C#程式設計、企業資料通訊、網路程式設計、多媒體程式設計 : <a style="text-decoration: none" href=https://sheng-jie106.github.io/introduction/ target="_blank"><span>個人網站</span></a>、資料結構</p>
+							</div>
+						</div>
+					</div>
+					<div class=top>
+						<img src=assert/svg/work.svg>
+						<span>工作經驗</span>
+						<div class=hr></div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2019/6 - 迄今<br>
+								<span class=titl>校內工讀生</span></p>
+							</div>
+							<div class=part_b>
+								<p>中原大學薄膜中心；平日工作內容主要為打掃環境、送公文、些許文書處理；平日在打掃方面認真負責，深獲館員讚許</p>
+							</div>
+						</div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2018/7 - 8<br>
+								<span class=titl>桌球社團教練</span></p>
+							</div>
+							<div class=part_b>
+								<p>升大二暑假期間藉他人介紹，至亞運桌球館擔任暑期社團教練，也是第一次擔任桌球教練的工作，並從中學習管教、與小孩子相處</p>
+							</div>
+						</div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2018/01 - 12<br>
+								<span class=titl>校內學生餐廳工讀生</span></p>
+							</div>
+							<div class=part_b>
+								<p>大一下學期開始在學餐內的便當店打工，主要負責打飯菜，搬運貨物；老闆娘對待員工不錯，也提供餐點，原以為可在此工作至大四畢業，但老闆娘事業另有打算，所以在大二上學期結束時結束營業</p>
+							</div>
+						</div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2018/7 - 12<br>
+								<span class=titl>早餐店工作人員</span></p>
+							</div>
+							<div class=part_b>
+								<p>升大二暑假時由於桌球教練的班次不多，所以另外在假日的早上於家裡附近早餐店打工，後因課業、家庭事務等原因而停止</p>
+							</div>
+						</div>
+					</div>
+					<div class=flow>
+						<div class=con>
+							<div class=part_a>
+								<p>2017/7 - 8<br>
+								<span class=titl>加油站站員</span></p>
+							</div>
+							<div class=part_b>
+								<p>於升大學的暑假，於山隆加油站開始了第一次打工賺錢，也在這兩個多月中深切地感受到賺錢的辛苦及許多社會的現實面</p>
+							</div>
+						</div>
+					</div>
+					<div class=top>
+						<img src=assert/svg/part.svg>
+						<span>自傳</span>
+						<div class=hr></div>
+					</div>
+					<div class=flow>
+						<div class=text style="padding: 20px 0;	">
+							<p>從小父母管教較開放、自由，不會特意要求課業表現，或任何才藝才能，讓我能夠自由的去接觸各式各樣的事物，發展自我的興趣，也造就我樂觀、獨立自主、接納多元的性格。</p>
+							<p>國小、國中階段憑著一點小聰明，不需花上太多時間，在課業上就能在班上中前段，所以對於課業心不在焉。高中時開始用功讀書，學習為自己的人生負責，也取得不錯的成績，最後以學測57級分進入中原大學心理系。</p>
+							<p>大學時延續了高中時的態度，盡力的在課業、工作上將事情做好。也希望自己的能力更進一步，所以加入了桌球校隊，來提升自己的體能；以及在大二下開始修習資訊管理學系的課程，並每周花兩小時以上的時間練習寫程式，提升技術能力，也期望未來能朝資訊方面法展。</p>
+							<p>雖然目前對於資訊方面技術還是新手，以致技術方面能力待加強，但我認為我擁有過人的學習力及努力，可以快速地熟悉一項新的事物，並分析，解決問題，是在這階段我所擁有的優勢。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>版權所有:©王聖杰_Wang-Sheng-jie<sub>&nbsp;&nbsp;&nbsp;&nbsp;2019/12/6</sub><br><span>若使用網頁中任何資訊務必告知，並取得同意後方得使用</span>
+		</footer>
+		</div>
+	</body>
+</html>
