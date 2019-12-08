@@ -34,3 +34,15 @@ function fif(){
 	var main=document.getElementById("main");
 	main.style.opacity=1;
 }
+function esteem(){
+	var main=document.getElementById("main");
+	var nav=document.getElementById("nav");
+	main.style.display="none";
+	nav.style.display="block";
+}
+function clos(){
+	var nav=document.getElementById("nav");
+	var main=document.getElementById("main");
+	nav.style.display="none";
+	main.style.display="block";	
+}

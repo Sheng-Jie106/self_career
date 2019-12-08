@@ -40,7 +40,7 @@
 			aside{
 				margin:0 auto;
 				position: relative;top:150px;
-				width: 500px;
+				width: 572px;
 				opacity: 1;
 				transition: top 1.5s;
 				display: block;
@@ -51,9 +51,28 @@
     			position: relative;top:-50px;
     			transition: top 1.5s;
 			}
+			nav{
+				position: absolute;top:0;
+				width: 100%;
+				height: 100%;
+				background-color:#c6c6c6;
+				z-index: 10;
+				display: none;
+			}
+			nav img{border-radius: 10px;}
+			div.close{
+				color:white;
+				background: grey;
+				box-shadow: 0 0 10px white;
+				position: absolute;right: 20px;top: 45px;
+				padding: 20px 25px;
+    			border-radius: 10px;
+			}
+			div.close:hover{cursor: pointer;}
 			h3{
 				font-family: 標楷體;
-				color:gray;
+				color:red;
+				font-size: 28px;
 				text-align: center;
 				opacity: 0;
 				transition: opacity 1s;
@@ -79,11 +98,16 @@
 		</style>
 	</head>
 	<body>
+		<nav id=nav>
+			<div class=close onclick="clos();"><a style="text-decoration: none;">X</a></div>
+			<div style="margin: 45px 118px;"><img src=assert/img/self-esteem.png>
+			<img style="width:781px;" src=assert/img/self-esteem2.png></div>
+		</nav>
 		<aside id=aside>
 			<div class="mail" id=topmail>
 				<img id=mail style="opacity: 0;transition: opacity 1.5s;" src=assert/img/mail.png>
 			</div>
-			<h3 id=h3>您收到了來自中原大學心理系同學的履歷</h3>
+			<h3 id=h3>您收到了一份來自中原大學心理系同學的履歷</h3>
 		</aside>
 		<div id=main style="display: none;opacity: 0;transition: opacity 1.5s">
 		<main>
@@ -169,7 +193,7 @@
 								<span class=titl>心理學(主修)</span></p>
 							</div>
 							<div class=part_b>
-								<p>發展心理學、統計學、社會心理學、變態心理學、神經心理學、心理測驗學、心理測驗實作 : <a style="text-decoration: none" href=self-esteem.html target="_blank"><span>自尊量表</span></a>、心理實驗法、心理實驗實作</p>
+								<p>發展心理學、統計學、社會心理學、變態心理學、神經心理學、心理測驗學、心理測驗實作 : <a><span class=esteem onclick="esteem();">自尊量表</span></a>、心理實驗法、心理實驗實作</p>
 							</div>
 						</div>
 					</div>
