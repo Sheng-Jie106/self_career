@@ -5,11 +5,11 @@ background-image:linear-gradient(to right, rgb(17, 185, 237), rgb(255, 249, 47))
 }
 article ul{list-style: none;}
 div.bar{line-height: 28px;}
-img.clip{width: 150px;}
-img.clip:hover{
-opacity: 0.8;
+img.clip{width: 
+150px;
 transition-duration: 0.5s;
 }
+img.clip:hover{opacity: 0.8;}
 div.connect{
 padding: 10px 20px;
 color:#463e3e;
@@ -31,10 +31,10 @@ img.por{
 width: 200px;
 border: 2px solid red;
 border-radius: 60%;
+transition-duration: 0.5s;
 }
 div.portrait img.por:hover{
 border-radius:10% ;
-transition-duration: 0.5s;
 }
 span.tit{
 color: #ff5919;

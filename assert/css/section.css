@@ -11,11 +11,10 @@ position: absolute;top: 160px;right: -10px;
 z-index: 5;
 border-radius: 100px 20px 20px 100px;
 box-shadow: 0 0 10px #d2d2d2;
-transition-duration: 0.5s: 
+transition-duration: 0.5s;
 }
 div.strip:hover{
 opacity: 1;
-transition-duration: 0.5s;
 width: 265px;
 }
 div.top{
@@ -58,10 +57,10 @@ div.text p{
 text-indent: 40px;
 padding: 0 40px ;
 }
+div.flow{transition-duration: 0.5s;}
 div.flow:hover{
 background-image: linear-gradient(to right, rgb(233, 216, 255), rgb(214, 244, 255));
 border-radius:20px;
 box-shadow: 0 0 10px gray;
-transition-duration: 0.5s;
 }
 span.esteem:hover{cursor: pointer;}
