@@ -1,15 +1,3 @@
-function a1(){
-	var i=0;
-	var a=document.getElementById("1");
-	var aa=document.getElementById("11");
-	var aaa=window.setInterval(function(){
-	if(i>=17){
-		window.clearInterval(aaa);
-	}
-	a.value=i;
-	aa.innerHTML=i;
-	i++;
-},150);}
 function b(){
 	var i=0;
 	var a=document.getElementById("2");
@@ -59,5 +47,5 @@ function e(){
 	i++;
 },93);}
 function six(){
-	a1();b();c();d();e();
+	b();c();d();e();
 }

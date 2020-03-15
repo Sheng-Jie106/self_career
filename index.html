@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Wang-Sheng-Jie_career</title>
-		<script src=assert/js/progress.js></script>
-		<script src=assert/js/aside.js></script>
-		<style type="text/css" media="screen">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>jason</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css" media="screen">
 		@import url(assert/css/article.css);
 		@import url(assert/css/section.css);
 			body{
@@ -14,26 +14,20 @@
 				font-family: 微軟正黑體;
 			}
 			main{
-				width:60%;
 				background-color:#aae1ff;
 				margin:140px auto;
 				padding: 60px ;
-				display: flex;
 				position: relative;
 				box-shadow: 0 0 16px grey;
 			}
 			article{
 				background-color:#f5fcffe0;
-				flex:none;
-				width:30%;
 				border: 5px inset white;
-    			border-right: none;
+				border-right: none;
 			}
 			section{
 				background-color:#fcefffe3;
-				flex:none;
 				position: relative;
-				width:70%;
 				border: 5px inset white;
     			border-left: none;
 			}
@@ -80,7 +74,20 @@
 			h4{
 				color:red;
 			}
-			p{line-height: 30px}
+			p{
+				line-height: 30px;
+				font-size: 20px;
+			}
+			@media (min-width:1200px){
+				article p{
+					width:310px;
+				}
+			}
+			@media(max-width: 992px){
+				article p{
+					width:310px;
+				}
+			}
 			footer{
 				background-image: linear-gradient(to bottom, rgb(157, 232, 255), rgb(58, 201, 255));
     			box-shadow: 0 0 10px grey;
@@ -95,29 +102,60 @@
 				font-family: 標楷體;
 				font-weight: bold;
 			}
-		</style>
-	</head>
-	<body>
-		<nav id=nav>
-			<div class=close onclick="clos();"><a style="text-decoration: none;">X</a></div>
-			<div style="margin: 45px 118px;"><img src=assert/img/self-esteem.png>
-			<img style="width:781px;" src=assert/img/self-esteem2.png></div>
-		</nav>
-		<aside id=aside>
-			<div class="mail" id=topmail>
-				<img id=mail style="opacity: 0;transition: opacity 1.5s;" src=assert/img/mail.png>
+	</style>
+</head>
+<body>
+	<aside id=aside>
+		<div class="mail" id=topmail>
+			<img id=mail style="opacity: 0;transition: opacity 1.5s;" src=assert/img/mail.png>
+		</div>
+		<h3 id=h3 style='opacity: 0;'>您收到了一份來自中原大學心理系同學的履歷</h3>
+	</aside>
+	<div id=mymodal class='modal fade'>
+		<div class=modal-dialog>
+			<div class=modal-content>
+				<div class=modal-header>
+					<button class=close data-dismiss=modal>&times;</button>
+					<h4 style="color:black">自尊量表</h4>
+				</div>
+				<div class=modal-body>
+					<div id=carousel class='carousel side'>
+						<ol class=carousel-indicators>
+							<li class=active data-slide-to=0 data-target=#carousel></li>
+							<li data-slide-to=1 data-target=#carousel></li>
+						</ol>
+						<div class=carousel-inner>
+							<div class='item active'>
+								<img src="assert/img/self-esteem.png">
+								<div class=carousel-caption>
+									<h4 style='color:black'>第一頁</h4>
+								</div>
+							</div>
+							<div class=item>
+								<img src="assert/img/self-esteem2.png">
+								<div class=carousel-caption>
+									<h4 style='color:black'>第二頁</h4>
+								</div>
+							</div>
+						</div>
+						<a class='left carousel-control' href=#carousel data-slide=prev><span class='glyphicon glyphicon-chevron-left'></span></a>
+						<a class='right carousel-control' href=#carousel data-slide=next><span class='glyphicon glyphicon-chevron-right'></span></a>
+					</div>
+				</div>
+				<div class=modal-footer>
+					<button class='btn btn-default' data-dismiss="modal">關閉</button>
+				</div>
 			</div>
-			<h3 id=h3>您收到了一份來自中原大學心理系同學的履歷</h3>
-		</aside>
-		<div id=main style="display: none;opacity: 0;transition: opacity 1.5s">
+		</div>
+	</div>
+	<div class=container id=main style="opacity: 0;transition: opacity 1.5s">
 		<main>
 			<div style="position: absolute;top: -109px;left: 38%;transform: rotate(-7deg);z-index: 2;" ><img class=clip src=assert/img/clip.png></div>
-			<div onmouseover='this.style.opacity=1;this.style.width=260+"px";' class=strip>
-			</div>
-			<article>
+		<div class=row>
+			<article class='col-md-4 col-sm-12';>
 				<div class=portrait>
 					<img class="por" src=assert/img/pic.jpg><br>
-					<img style="margin: 16px 35px;" src=assert/img/name.png>
+					<img style='margin-top:16px' src=assert/img/name.png>
 				</div>
 				<div class=base>
 					<span class="tit">基本資料</span>
@@ -151,24 +189,32 @@
 					<span class=tit>專業技能</span>
 					<hr>
 					<div class=bar>
-						<p style="width:310px"><span class=titl>html &amp;
-						css &amp; JavaScript</span> : <br>
-						於初學階段，簡單了解三者操作與運作<br>
-						<span class=titl>桌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;球</span> : <br>108年大專院校北區男子團體第8名</br>中原大學106年新生盃第二名<br>中原大學積分賽800分以下第三名<br>
-						中華民國C級桌球裁判證照</br>
-						<span class=titl>打&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;字</span> :<br> 平均一分鐘60字<br>
-						<span class=titl>測驗編制</span> : <br>了解測驗編制基本原則、流程大綱</p>
+						<p><span class=titl>桌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;球</span> : <br>109年全國輔大盃男子團體第四名<br>108年大專院校北區男子團體第8名</br>中原大學106年新生盃第二名<br>中原大學積分賽800分以下第三名<br>
+						具中華民國C級桌球裁判資格
 					</div>
-					<hr><p>
+					<hr>
+				</div>
+				<div class=connect>
+					<span class=tit>學習中</span>
+					<hr>
+					<div class=bar>
+						<p><span class=titl>前端設計</span> : <br>
+						html &amp;
+						css &amp; JavaScript於初學階段，能簡單了解三者操作與運作<br>
+						<span class=titl>後端設計</span> : <br>
+						JSP &amp;mySQL能以其做出具有基本功能之購物網站<br>
+						<span class=titl>測驗編制</span> : <br>了解測驗編制基本原則、流程大綱;簡單分析問卷資料</p>
+					</div>
+					<hr>
 				</div>
 				<div class=connect>
 					<span class=tit>通訊資料</span>
 					<hr>
 					<div>
-						<p><img style="width: 34px;position: relative;top:11px;" src=assert/svg/phone.svg>: 03-3123456<br>
-						<img style="width: 34px;position: relative;top:11px;" src=assert/svg/cellphone.svg>: 0912345678<br>
-						<img style="width: 34px;position: relative;top:11px;" src=assert/svg/email.svg>: fet091602@gmail.com<br>
-						<img style="width: 34px;position: relative;top:11px;" src=assert/svg/home.svg>: 桃園市中北路200號<br>
+						<p><img style="width: 34px;position: relative;top:11px;vertical-align: unset;" src=assert/svg/phone.svg>: 03-3123456<br>
+						<img style="width: 34px;position: relative;top:11px;vertical-align: unset;" src=assert/svg/cellphone.svg>: 0912345678<br>
+						<img style="width: 34px;position: relative;top:11px;vertical-align: unset;" src=assert/svg/email.svg>: fet091602@gmail.com<br>
+						<img style="width: 34px;position: relative;top:11px;vertical-align: unset;" src=assert/svg/home.svg>: 桃園市中北路200號<br>
 						<a href=https://www.facebook.com/profile.php?id=100005201971738&ref=bookmarks target="_blank"><img src=assert/img/fb.png> : 王聖杰</a><br>
 						<a href=https://www.instagram.com/shengjie60 target="_blank"><img src=assert/img/ig.jpg> : shengjie60</a>
 						</p>
@@ -176,101 +222,109 @@
 					<hr><p>
 				</div>
 			</article>
-			<section>
+			<section class='col-md-8 col-sm-12'>
+				<div onmouseover='this.style.opacity=1;this.style.width=260+"px";' class=strip>
+				</div>
 				<div class=space>
 				</div>
 				<div class=art>
-					<div class=top>
+					<div class=row>
+					<div class='top col-sm-11'>
 						<img src=assert/svg/hat.svg>
-						<span>教育背景</span>
+						<span class=tit>教育背景</span>
 						<div class=hr></div>
 					</div>
+					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
 								<p>2017 - 2021<br>
 								<span class=titl>心理學(主修)</span></p>
 							</div>
-							<div class=part_b>
-								<p>發展心理學、統計學、社會心理學、變態心理學、神經心理學、心理測驗學、心理測驗實作 : <a><span class=esteem onclick="esteem();">自尊量表</span></a>、心理實驗法、心理實驗實作</p>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
+								<p>發展心理學、統計學、社會心理學、變態心理學、神經心理學、心理測驗學、心理測驗實作 : <a><span class=esteem data-toggle=modal data-target=#mymodal>自尊量表</span></a>、心理實驗法、心理實驗實作</p>
 							</div>
 						</div>
 					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
 								<p>2019 - 2021<br>
 								<span class=titl>資訊管理(輔修)</span></p>
 							</div>
-							<div class=part_b>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
 								<p>Java程式設計、C#程式設計、企業資料通訊、網路程式設計、多媒體程式設計 : <a style="text-decoration: none" href=https://sheng-jie106.github.io/self_introduction/ target="_blank"><span>個人網站</span></a>、資料結構</p>
 							</div>
 						</div>
 					</div>
-					<div class=top>
+					<div class=row>
+					<div class='top col-md-11 col-sm-11'>
 						<img src=assert/svg/work.svg>
-						<span>工作經驗</span>
+						<span class=tit>工作經驗</span>
 						<div class=hr></div>
 					</div>
+					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
 								<p>2019/6 - 迄今<br>
 								<span class=titl>校內工讀生</span></p>
 							</div>
-							<div class=part_b>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
 								<p>中原大學薄膜中心；平日工作內容主要為打掃環境、送公文、些許文書處理；平日在打掃方面認真負責，深獲館員讚許</p>
 							</div>
 						</div>
 					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
-								<p>2018/7 - 8<br>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
+								<p>2018/7 - 迄今<br>
 								<span class=titl>桌球社團教練</span></p>
 							</div>
-							<div class=part_b>
-								<p>升大二暑假期間藉他人介紹，至亞運桌球館擔任暑期社團教練，也是第一次擔任桌球教練的工作，並從中學習管教、與小孩子相處</p>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
+								<p>從升大二暑假開始接觸教球，到現在已能得心應手，也從教導孩子們的過程中更提升了自己的技術</p>
 							</div>
 						</div>
 					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
 								<p>2018/01 - 12<br>
 								<span class=titl>校內學生餐廳工讀生</span></p>
 							</div>
-							<div class=part_b>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
 								<p>大一下學期開始在學餐內的便當店打工，主要負責打飯菜，搬運貨物；老闆娘對待員工不錯，也提供餐點，原以為可在此工作至大四畢業，但老闆娘事業另有打算，所以在大二上學期結束時結束營業</p>
 							</div>
 						</div>
 					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
 								<p>2018/7 - 12<br>
 								<span class=titl>早餐店工作人員</span></p>
 							</div>
-							<div class=part_b>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
 								<p>升大二暑假時由於桌球教練的班次不多，所以另外在假日的早上於家裡附近早餐店打工，後因課業、家庭事務等原因而停止</p>
 							</div>
 						</div>
 					</div>
 					<div class=flow>
-						<div class=con>
-							<div class=part_a>
+						<div class=row>
+							<div class='part_a col-md-4 col-sm-4 col-xs-12'>
 								<p>2017/7 - 8<br>
 								<span class=titl>加油站站員</span></p>
 							</div>
-							<div class=part_b>
+							<div class='part_b col-md-8 col-sm-8 col-xs-12'>
 								<p>於升大學的暑假，於山隆加油站開始了第一次打工賺錢，也在這兩個多月中深切地感受到賺錢的辛苦及許多社會的現實面</p>
 							</div>
 						</div>
 					</div>
-					<div class=top>
+					<div class=row>
+					<div class='top col-sm-11'>
 						<img src=assert/svg/part.svg>
-						<span>自傳</span>
+						<span class=tit>自傳</span>
 						<div class=hr></div>
+					</div>
 					</div>
 					<div class=flow>
 						<div class=text style="padding: 20px 0;	">
@@ -282,10 +336,13 @@
 					</div>
 				</div>
 			</section>
-		</main>
-		<footer>
-			<p>版權所有:©王聖杰_Wang-Sheng-jie<sub>&nbsp;&nbsp;&nbsp;&nbsp;2019/12/6</sub><br><span>若使用網頁中任何資訊務必告知，並取得同意後方得使用</span>
-		</footer>
 		</div>
-	</body>
+		</main>
+	</div>
+	<script src=assert/js/progress.js></script>
+	<script src=assert/js/aside.js></script>
+	<script src=assert/js/rwd.js></script>	
+	<script type="text/javascript" src=js/jquery-3.4.1.min.js></script>
+	<script type="text/javascript" src=js/bootstrap.min.js></script>
+</body>
 </html>

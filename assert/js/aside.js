@@ -1,4 +1,6 @@
 window.onload=function(){
+	wid();
+	widt();
 	fir();//信從上到下透明而出
 	window.setTimeout(sec,2000);//標題出現
 	window.setTimeout(thir,5500);//透明消失
@@ -33,16 +35,4 @@ function four(){
 function fif(){
 	var main=document.getElementById("main");
 	main.style.opacity=1;
-}
-function esteem(){
-	var main=document.getElementById("main");
-	var nav=document.getElementById("nav");
-	main.style.display="none";
-	nav.style.display="block";
-}
-function clos(){
-	var nav=document.getElementById("nav");
-	var main=document.getElementById("main");
-	nav.style.display="none";
-	main.style.display="block";	
 }
