@@ -1,9 +1,9 @@
 //調整main-padding
-var main_padding=document.getElementsByTagName("main").item(0);
-var width=window.screen.width;
-if(width<992){
-    main_padding.style.padding="25px";
-}
+// var main_padding=document.getElementsByTagName("main").item(0);
+// var width=window.screen.width;
+// if(width<992){
+//     main_padding.style.padding="25px";
+// }
 function widt(){
     document.getElementById("main").style.display="none";
 }

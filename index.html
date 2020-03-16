@@ -16,9 +16,18 @@
 			main{
 				background-color:#aae1ff;
 				margin:140px auto;
-				padding: 60px ;
 				position: relative;
 				box-shadow: 0 0 16px grey;
+			}
+			@media (max-width:992px){
+				.pad{
+					padding:25px;
+				}
+			}
+			@media (min-width:992px){
+				.pad2{
+					padding:60px;
+				}
 			}
 			article{
 				background-color:#f5fcffe0;
@@ -79,11 +88,6 @@
 				font-size: 20px;
 			}
 			@media (min-width:1200px){
-				article p{
-					width:310px;
-				}
-			}
-			@media(max-width: 992px){
 				article p{
 					width:310px;
 				}
@@ -149,7 +153,7 @@
 		</div>
 	</div>
 	<div class=container id=main style="opacity: 0;transition: opacity 1.5s">
-		<main>
+		<main class='pad2 pad'>
 			<div style="position: absolute;top: -109px;left: 38%;transform: rotate(-7deg);z-index: 2;" ><img class=clip src=assert/img/clip.png></div>
 		<div class=row>
 			<article class='col-md-4 col-sm-12';>
@@ -320,7 +324,7 @@
 						</div>
 					</div>
 					<div class=row>
-					<div class='top col-sm-11'>
+					<div class='top col-sm-12'>
 						<img src=assert/svg/part.svg>
 						<span class=tit>自傳</span>
 						<div class=hr></div>
