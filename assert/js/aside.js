@@ -1,12 +1,12 @@
 window.onload=function(){
-	wid();
-	widt();
-	fir();//信從上到下透明而出
-	window.setTimeout(sec,2000);//標題出現
-	window.setTimeout(thir,5500);//透明消失
-	window.setTimeout(four,6500);//主體取消none
-	window.setTimeout(fif,7000);//主體出現
-	window.setTimeout(six,8650);//能力值
+	wid(); // 計算寬度
+	widt();// 計算寬度
+	//fir();//信從上到下透明而出
+	//window.setTimeout(sec,2000);//標題出現
+	//thir();//透明消失
+	four();//主體取消none
+	window.setTimeout(fif,500);//主體出現
+	window.setTimeout(six,650);//能力值
 }
 function fir(){
 	var mail=document.getElementById("mail");
